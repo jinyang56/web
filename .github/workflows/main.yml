@@ -1,0 +1,15 @@
+name: elmah.io Upload Source Map Action
+  # You may pin to the exact commit or the version.
+  # uses: elmahio/github-upload-source-map-action@02d3e0a71cb7741a98860405f287c4abf95f62bc
+  uses: elmahio/github-upload-source-map-action@v1
+  with:
+    # An API key with permission to upload source maps.
+    apiKey: 
+    # The ID of the log which should contain the minified JavaScript and source map.
+    logId: 
+    # An URL to the online minified JavaScript file. The URL can be absolute or relative but will always be converted to a relative path (no protocol, domain, and query parameters). elmah.io uses this path to lookup any lines in a JS stack trace that will need de-minification.
+    path: 
+    # A path to the source map file. Only files with an extension of .map and content type of application/json will be accepted.
+    sourceMap: 
+    # A path to the minified JavaScript file. Only files with an extension of .js and content type of text/javascript will be accepted.
+    minifiedJavaScript: 
